@@ -1,0 +1,2962 @@
+[
+  {
+    "fpts": 56.15,
+    "id": 301719,
+    "isMlb": false,
+    "liked": 0.27,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.925,
+    "pos": [
+      "SG"
+    ],
+    "salary": 11400,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 53.48,
+    "id": 301778,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.862,
+    "pos": [
+      "C"
+    ],
+    "salary": 11000,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 46.27,
+    "id": 301689,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.721,
+    "pos": [
+      "SG"
+    ],
+    "salary": 9800,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 45.44,
+    "id": 301758,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 5.049,
+    "pos": [
+      "PF"
+    ],
+    "salary": 9000,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 41.72,
+    "id": 301669,
+    "isMlb": false,
+    "liked": 0.23,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.346,
+    "pos": [
+      "PG"
+    ],
+    "salary": 9600,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 40.95,
+    "id": 301759,
+    "isMlb": false,
+    "liked": 0.34,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 4.311,
+    "pos": [
+      "PG"
+    ],
+    "salary": 9500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 40.21,
+    "id": 301681,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.622,
+    "pos": [
+      "C"
+    ],
+    "salary": 8700,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 38.49,
+    "id": 301699,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.325,
+    "pos": [
+      "PG"
+    ],
+    "salary": 8900,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 38.2,
+    "id": 301749,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 3.979,
+    "pos": [
+      "PG"
+    ],
+    "salary": 9600,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 37.89,
+    "id": 301659,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 4.458,
+    "pos": [
+      "SF"
+    ],
+    "salary": 8500,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 36.91,
+    "id": 301700,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.342,
+    "pos": [
+      "SG"
+    ],
+    "salary": 8500,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 36.77,
+    "id": 301760,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 5.329,
+    "pos": [
+      "C"
+    ],
+    "salary": 6900,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 34.9,
+    "id": 301739,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 5.453,
+    "pos": [
+      "SF"
+    ],
+    "salary": 6400,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 33.9,
+    "id": 301779,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.843,
+    "pos": [
+      "SF"
+    ],
+    "salary": 7000,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 33.86,
+    "id": 301709,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 4.703,
+    "pos": [
+      "C"
+    ],
+    "salary": 7200,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 33.22,
+    "id": 301650,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.371,
+    "pos": [
+      "PG"
+    ],
+    "salary": 7600,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 33.11,
+    "id": 301680,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.599,
+    "pos": [
+      "PG"
+    ],
+    "salary": 7200,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 32.97,
+    "id": 301649,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.778,
+    "pos": [
+      "SG"
+    ],
+    "salary": 6900,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 32.11,
+    "id": 301660,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 4.793,
+    "pos": [
+      "PG"
+    ],
+    "salary": 6700,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 31.97,
+    "id": 301750,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 4.263,
+    "pos": [
+      "SG"
+    ],
+    "salary": 7500,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 29.58,
+    "id": 301742,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 4.771,
+    "pos": [
+      "PG"
+    ],
+    "salary": 6200,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 29.38,
+    "id": 301671,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.321,
+    "pos": [
+      "SG"
+    ],
+    "salary": 6800,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 29.15,
+    "id": 301731,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.627,
+    "pos": [
+      "SF"
+    ],
+    "salary": 6300,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 29.08,
+    "id": 301690,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.69,
+    "pos": [
+      "PF"
+    ],
+    "salary": 6200,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 28.83,
+    "id": 301730,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 5.242,
+    "pos": [
+      "SG"
+    ],
+    "salary": 5500,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 28.74,
+    "id": 301769,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.491,
+    "pos": [
+      "PF"
+    ],
+    "salary": 6400,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 28.32,
+    "id": 301734,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 5.057,
+    "pos": [
+      "PF"
+    ],
+    "salary": 5600,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 28.02,
+    "id": 301740,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 4.916,
+    "pos": [
+      "SG"
+    ],
+    "salary": 5700,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 27.7,
+    "id": 301753,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 4.695,
+    "pos": [
+      "C"
+    ],
+    "salary": 5900,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 27.68,
+    "id": 301670,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.538,
+    "pos": [
+      "C"
+    ],
+    "salary": 6100,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 27.58,
+    "id": 301772,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.378,
+    "pos": [
+      "SG"
+    ],
+    "salary": 6300,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 27.24,
+    "id": 301712,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 5.044,
+    "pos": [
+      "SG"
+    ],
+    "salary": 5400,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 27.13,
+    "id": 301724,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.76,
+    "pos": [
+      "C"
+    ],
+    "salary": 5700,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 26.96,
+    "id": 301710,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 4.648,
+    "pos": [
+      "PF"
+    ],
+    "salary": 5800,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 26.6,
+    "id": 301663,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 4.433,
+    "pos": [
+      "C"
+    ],
+    "salary": 6000,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 26.21,
+    "id": 301684,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.854,
+    "pos": [
+      "PG"
+    ],
+    "salary": 5400,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 25.56,
+    "id": 301729,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.407,
+    "pos": [
+      "SF"
+    ],
+    "salary": 5800,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 25.52,
+    "id": 301720,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.64,
+    "pos": [
+      "SF"
+    ],
+    "salary": 5500,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 25.51,
+    "id": 301751,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 5.206,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4900,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 25.38,
+    "id": 301662,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 5.076,
+    "pos": [
+      "PF"
+    ],
+    "salary": 5000,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 25.32,
+    "id": 301780,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.604,
+    "pos": [
+      "PG"
+    ],
+    "salary": 5500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 25.28,
+    "id": 301723,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.957,
+    "pos": [
+      "PG"
+    ],
+    "salary": 5100,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 25.07,
+    "id": 301672,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.398,
+    "pos": [
+      "SF"
+    ],
+    "salary": 5700,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 24.64,
+    "id": 301722,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.649,
+    "pos": [
+      "SG"
+    ],
+    "salary": 5300,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 24.46,
+    "id": 301747,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 5.436,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 24.15,
+    "id": 301694,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 5.138,
+    "pos": [
+      "C"
+    ],
+    "salary": 4700,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 24.04,
+    "id": 301673,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.714,
+    "pos": [
+      "PF"
+    ],
+    "salary": 5100,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 22.9,
+    "id": 301702,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.404,
+    "pos": [
+      "C"
+    ],
+    "salary": 5200,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 22.67,
+    "id": 301762,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 5.529,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4100,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 22.62,
+    "id": 301695,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.524,
+    "pos": [
+      "C"
+    ],
+    "salary": 5000,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 22.59,
+    "id": 301771,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 3.703,
+    "pos": [
+      "PG"
+    ],
+    "salary": 6100,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 22.21,
+    "id": 301721,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 4.936,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 21.78,
+    "id": 301768,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.445,
+    "pos": [
+      "PG"
+    ],
+    "salary": 4900,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 20.93,
+    "id": 301703,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.983,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4200,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 20.32,
+    "id": 301652,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.726,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4300,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 20.31,
+    "id": 301733,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.321,
+    "pos": [
+      "PG"
+    ],
+    "salary": 4700,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 20.28,
+    "id": 301755,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 5.337,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 20.19,
+    "id": 301735,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 3.959,
+    "pos": [
+      "PF"
+    ],
+    "salary": 5100,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 19.91,
+    "id": 301665,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 5.239,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 19.77,
+    "id": 301685,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.298,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4600,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 19.72,
+    "id": 301732,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.108,
+    "pos": [
+      "PG"
+    ],
+    "salary": 4800,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 19.71,
+    "id": 301651,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.194,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4700,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 19.65,
+    "id": 301701,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.466,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4400,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 19.61,
+    "id": 301713,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 3.113,
+    "pos": [
+      "PG"
+    ],
+    "salary": 6300,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 19.53,
+    "id": 301738,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.34,
+    "pos": [
+      "C"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 19.39,
+    "id": 301761,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 4.729,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4100,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 19.36,
+    "id": 301711,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 4.209,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4600,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 19.34,
+    "id": 301737,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 5.227,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 19.33,
+    "id": 301675,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 4.832,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4000,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 19.28,
+    "id": 301655,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.102,
+    "pos": [
+      "C"
+    ],
+    "salary": 4700,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 19.01,
+    "id": 301775,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.526,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4200,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 18.62,
+    "id": 301664,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 4.433,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4200,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 18.54,
+    "id": 301773,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.635,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4000,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 18.49,
+    "id": 301782,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.997,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 18.43,
+    "id": 301754,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 4.096,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 18.23,
+    "id": 301692,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.446,
+    "pos": [
+      "PG"
+    ],
+    "salary": 4100,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 18.18,
+    "id": 301666,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 5.05,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3600,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 18.14,
+    "id": 301770,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.319,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4200,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 18.1,
+    "id": 301745,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 4.892,
+    "pos": [
+      "C"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 17.98,
+    "id": 301687,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 3.669,
+    "pos": [
+      "SF"
+    ],
+    "salary": 4900,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 17.84,
+    "id": 301774,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.822,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 17.72,
+    "id": 301688,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.544,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3900,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 17.67,
+    "id": 301667,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 4.776,
+    "pos": [
+      "C"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 17.63,
+    "id": 301715,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 4.521,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3900,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 17.62,
+    "id": 301657,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.405,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4000,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 17.23,
+    "id": 301752,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 4.534,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 17.07,
+    "id": 301654,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 4.377,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3900,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 17.07,
+    "id": 301785,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.877,
+    "pos": [
+      "C"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 17.01,
+    "id": 301786,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.597,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 16.97,
+    "id": 301653,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 3.771,
+    "pos": [
+      "PF"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 16.75,
+    "id": 301707,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.408,
+    "pos": [
+      "C"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 16.71,
+    "id": 301776,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 4.642,
+    "pos": [
+      "C"
+    ],
+    "salary": 3600,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 16.57,
+    "id": 301693,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.478,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 16.38,
+    "id": 301682,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 3.64,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4500,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 16.25,
+    "id": 301679,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 4.276,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 16.25,
+    "id": 301766,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 4.167,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3900,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 15.81,
+    "id": 301705,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.517,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 15.46,
+    "id": 301793,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 4.417,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 15.38,
+    "id": 301743,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 3.577,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4300,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 15.17,
+    "id": 301704,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 3.992,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 15.17,
+    "id": 301784,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4.334,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 14.93,
+    "id": 301714,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 3.828,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3900,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 14.55,
+    "id": 301706,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 4.157,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 14.53,
+    "id": 301686,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 3.632,
+    "pos": [
+      "SG"
+    ],
+    "salary": 4000,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 14.51,
+    "id": 301725,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 3.922,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 14.4,
+    "id": 301781,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 4,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3600,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 14.36,
+    "id": 301698,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 4.103,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 14.25,
+    "id": 301744,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 4.071,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 13.66,
+    "id": 301765,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 3.903,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 13.44,
+    "id": 301691,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 3.84,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 13.36,
+    "id": 301658,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 3.817,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 13.19,
+    "id": 301726,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 3.565,
+    "pos": [
+      "C"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 13.12,
+    "id": 301789,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 3.749,
+    "pos": [
+      "C"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 12.92,
+    "id": 301748,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 3.691,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 12.37,
+    "id": 301741,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 3.534,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 12.33,
+    "id": 301756,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 3.523,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 12.3,
+    "id": 301736,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DAL",
+    "order": "N/A",
+    "point_per_dollar": 3.417,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3600,
+    "team": {
+      "id": "145",
+      "name": "DEN",
+      "scheduleId": 35938
+    },
+    "team_hash": "DEN"
+  },
+  {
+    "fpts": 12.22,
+    "id": 301728,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 3.491,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 11.78,
+    "id": 301763,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 3.366,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 11.73,
+    "id": 301746,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "DEN",
+    "order": "N/A",
+    "point_per_dollar": 3.17,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "140",
+      "name": "DAL",
+      "scheduleId": 35938
+    },
+    "team_hash": "DAL"
+  },
+  {
+    "fpts": 11.58,
+    "id": 301683,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 3.13,
+    "pos": [
+      "C"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 11.17,
+    "id": 301674,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 3.191,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 11.1,
+    "id": 301716,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 3,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 10.73,
+    "id": 301668,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 3.066,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  },
+  {
+    "fpts": 10.53,
+    "id": 301795,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 3.009,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 10.5,
+    "id": 301777,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 3,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 10.41,
+    "id": 301708,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIL",
+    "order": "N/A",
+    "point_per_dollar": 2.739,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3800,
+    "team": {
+      "id": "129",
+      "name": "TOR",
+      "scheduleId": 35936
+    },
+    "team_hash": "TOR"
+  },
+  {
+    "fpts": 10.32,
+    "id": 301787,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 2.949,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 10.16,
+    "id": 301767,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 2.822,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3600,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 9.98,
+    "id": 301718,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 2.851,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 9.58,
+    "id": 301727,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "BKN",
+    "order": "N/A",
+    "point_per_dollar": 2.737,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "141",
+      "name": "HOU",
+      "scheduleId": 35937
+    },
+    "team_hash": "HOU"
+  },
+  {
+    "fpts": 9.22,
+    "id": 301697,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 2.492,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 8.64,
+    "id": 301794,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "SAC",
+    "order": "N/A",
+    "point_per_dollar": 2.335,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "152",
+      "name": "LAL",
+      "scheduleId": 35940
+    },
+    "team_hash": "LAL"
+  },
+  {
+    "fpts": 8.62,
+    "id": 301790,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 2.463,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 8.23,
+    "id": 301696,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "TOR",
+    "order": "N/A",
+    "point_per_dollar": 2.351,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "134",
+      "name": "MIL",
+      "scheduleId": 35936
+    },
+    "team_hash": "MIL"
+  },
+  {
+    "fpts": 7.92,
+    "id": 301678,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 2.263,
+    "pos": [
+      "PG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 7.67,
+    "id": 301792,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 2.191,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 7.48,
+    "id": 301885,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "WAS",
+    "order": "N/A",
+    "point_per_dollar": 2.022,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "137",
+      "name": "MIA",
+      "scheduleId": 35935
+    },
+    "team_hash": "MIA"
+  },
+  {
+    "fpts": 7.4,
+    "id": 301797,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 2.114,
+    "pos": [
+      "SF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 7.19,
+    "id": 301676,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 2.054,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 7.11,
+    "id": 301783,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAL",
+    "order": "N/A",
+    "point_per_dollar": 2.031,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "154",
+      "name": "SAC",
+      "scheduleId": 35940
+    },
+    "team_hash": "SAC"
+  },
+  {
+    "fpts": 7.05,
+    "id": 301791,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "HOU",
+    "order": "N/A",
+    "point_per_dollar": 1.905,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3700,
+    "team": {
+      "id": "126",
+      "name": "BKN",
+      "scheduleId": 35937
+    },
+    "team_hash": "BKN"
+  },
+  {
+    "fpts": 6.62,
+    "id": 301656,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "IND",
+    "order": "N/A",
+    "point_per_dollar": 1.891,
+    "pos": [
+      "C"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "136",
+      "name": "CHA",
+      "scheduleId": 35934
+    },
+    "team_hash": "CHA"
+  },
+  {
+    "fpts": 6.58,
+    "id": 301764,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 1.88,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 6.5,
+    "id": 301677,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "MIA",
+    "order": "N/A",
+    "point_per_dollar": 1.857,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "139",
+      "name": "WAS",
+      "scheduleId": 35935
+    },
+    "team_hash": "WAS"
+  },
+  {
+    "fpts": 5.73,
+    "id": 301757,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "LAC",
+    "order": "N/A",
+    "point_per_dollar": 1.637,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "147",
+      "name": "POR",
+      "scheduleId": 35939
+    },
+    "team_hash": "POR"
+  },
+  {
+    "fpts": 5.64,
+    "id": 301796,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "POR",
+    "order": "N/A",
+    "point_per_dollar": 1.611,
+    "pos": [
+      "SG"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "151",
+      "name": "LAC",
+      "scheduleId": 35939
+    },
+    "team_hash": "LAC"
+  },
+  {
+    "fpts": 4.94,
+    "id": 301788,
+    "isMlb": false,
+    "liked": false,
+    "locked": false,
+    "opp_hash": "CHA",
+    "order": "N/A",
+    "point_per_dollar": 1.411,
+    "pos": [
+      "PF"
+    ],
+    "salary": 3500,
+    "team": {
+      "id": "133",
+      "name": "IND",
+      "scheduleId": 35934
+    },
+    "team_hash": "IND"
+  }
+]
