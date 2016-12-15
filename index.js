@@ -1,9 +1,9 @@
 // Tournament algorithm to generate lineups from only exposures and salaries
 
 const _ = require('underscore');
-// sample NBA fanduel pool from 12/12/16
-const pool = require('./samplePool.json');
+const pool = require('./samplePool.json'); // sample NBA fanduel pool from 12/12/16
 
+// default to one lineup if no argument provided
 const outputCount = process.argv[2] || 1;
 
 // returns the salary for a lineup or partial lineup
@@ -20,17 +20,33 @@ function getLineupKey(lineup) {
   return lineup.map(player => player.id).join('-');
 }
 
-function isValidLineup(lineup, salaryFloor, salaryCap) {
-  const salary = getSalary(lineup);
-  return salary > salaryFloor && salary < salaryCap;
-}
-
 function getLineupSummary(lineup) {
   const lineupKey = getLineupKey(lineup);
   const formattedSalary = getFormattedCurrency(getSalary(lineup));
   return `${lineupKey} (${formattedSalary})`;
 }
 
+// get players who are eligible to fill a lineup at a given position
+function getPositionCandidates(playerPool, prep, position, remainingSalary) {
+  return playerPool.filter(player =>
+      _.includes(player.pos, position) && player.salary < remainingSalary);
+}
+
+// TODO: change candidate selection to use min and max exposures (prep)
+function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
+  const candidates = getPositionCandidates(playerPool, prep, position, remainingSalary);
+  if (candidates.length === 0) {
+    return null;
+  }
+  return _.sample(candidates);
+}
+
+function isValidLineup(lineup, salaryFloor, salaryCap) {
+  const salary = getSalary(lineup);
+  return salary > salaryFloor && salary < salaryCap;
+}
+
+// generate a weighted distribution of liked players for a given position
 function generatePosDist(posSubPool) {
   const liked = posSubPool.filter(player => player.liked);
   const likedDist = liked.reduce((acc, curr) =>
@@ -42,18 +58,13 @@ function generatePosDist(posSubPool) {
   return likedDist;
 }
 
+// generate and return liked distributions for each position
 function generateLineupPrep(playerPool, positions) {
   return positions.reduce((acc, curr) => {
     const posSubPool = playerPool.filter(player => _.includes(player.pos, curr));
     const posDist = generatePosDist(posSubPool);
     return Object.assign(acc, { [curr]: posDist });
   }, {});
-}
-
-// get players who are eligible to fill a lineup at a given position
-function getPositionCandidates(playerPool, prep, position, remainingSalary) {
-  return playerPool.filter(player =>
-      _.includes(player.pos, position) && player.salary < remainingSalary);
 }
 
 function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
@@ -63,13 +74,10 @@ function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
 
   while (posId < positions.length && attempt < 1000) {
     const remainingSalary = salaryCap - getSalary(partialLineup);
-    // TODO: change candidate selection to use min and max exposures (prep)
-    const candidates = getPositionCandidates(playerPool, prep, positions[posId], remainingSalary);
-    // null indicates an invalid lineup
-    if (candidates.length === 0) {
+    const selection = getEligiblePlayer(playerPool, prep, positions[posId], remainingSalary);
+    if (selection === null) {
       return null;
     }
-    const selection = _.sample(candidates);
     partialLineup.push(selection);
     posId += 1;
     attempt += 1;
@@ -104,13 +112,13 @@ function printLineups(lineups) {
 }
 
 function printMetadata(salaryFloor, salaryCap, numLineups, hrtime) {
-  console.log(`salaryCap = ${getFormattedCurrency(salaryCap)}`);
   console.log(`salaryFloor = ${getFormattedCurrency(salaryFloor)}`);
+  console.log(`salaryCap = ${getFormattedCurrency(salaryCap)}`);
   console.log(`Generated ${numLineups} lineups in ${hrtime[0]}s ${hrtime[1]}ns`);
 }
 
 (function run() {
-  // fanduel nba settings
+  // fanduel nba settings downscaled to 5 positions
   const salaryCap = 60000 * (5 / 9);
   const salaryFloor = 0.95 * salaryCap;
 
