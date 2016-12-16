@@ -1,5 +1,4 @@
 // Tournament algorithm to generate lineups from only exposures and salaries
-
 const _ = require('underscore');
 const pool = require('./samplePool.json'); // sample NBA fanduel pool from 12/12/16
 
@@ -32,13 +31,23 @@ function getPositionCandidates(playerPool, prep, position, remainingSalary) {
       _.includes(player.pos, position) && player.salary < remainingSalary);
 }
 
-// TODO: change candidate selection to use min and max exposures (prep)
+// TODO: prevent going over a specified exposure in liked player selection
 function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
   const candidates = getPositionCandidates(playerPool, prep, position, remainingSalary);
   if (candidates.length === 0) {
     return null;
   }
-  return _.sample(candidates);
+  const nonLikedCandidates = candidates.filter(player => !player.liked);
+  const selectedLikedId = _.sample(prep[position]);
+
+  if (selectedLikedId) {
+    const selectedLikedArr = candidates.filter(player => player.id === selectedLikedId);
+    if (_.isEmpty(selectedLikedArr)) {
+      return null;
+    }
+    return selectedLikedArr[0];
+  }
+  return _.sample(nonLikedCandidates);
 }
 
 function isValidLineup(lineup, salaryFloor, salaryCap) {
@@ -69,18 +78,13 @@ function generateLineupPrep(playerPool, positions) {
 
 function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
   const partialLineup = [];
-  let posId = 0;
-  let attempt = 0;
-
-  while (posId < positions.length && attempt < 1000) {
+  for (let posId = 0; posId < positions.length; posId++) {
     const remainingSalary = salaryCap - getSalary(partialLineup);
     const selection = getEligiblePlayer(playerPool, prep, positions[posId], remainingSalary);
-    if (selection === null) {
+    if (!selection) {
       return null;
     }
     partialLineup.push(selection);
-    posId += 1;
-    attempt += 1;
   }
   return partialLineup;
 }
@@ -93,7 +97,7 @@ function generateLineups(playerPool, prep, positions, salaryFloor, salaryCap) {
   let attempt = 0;
   while (lineups.length < outputCount && attempt < maxAttempts) {
     const candidate = generateLineup(playerPool, prep, positions, salaryFloor, salaryCap);
-    if (candidate !== null) {
+    if (candidate) {
       const lineupKey = getLineupKey(candidate);
       // only add distinct, valid lineups
       if (!lineupKeys[lineupKey] && isValidLineup(candidate, salaryFloor, salaryCap)) {
@@ -120,8 +124,9 @@ function printMetadata(salaryFloor, salaryCap, numLineups, hrtime) {
 (function run() {
   // fanduel nba settings downscaled to 5 positions
   const salaryCap = 60000 * (5 / 9);
-  const salaryFloor = 0.95 * salaryCap;
+  const salaryFloor = 0.75 * salaryCap;
 
+  // TODO: allow for duplicate positions in a lineup
   const positions = ['PG', 'SG', 'SF', 'PF', 'C'];
 
   const prep = generateLineupPrep(pool, positions);
