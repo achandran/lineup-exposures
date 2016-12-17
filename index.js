@@ -52,7 +52,7 @@ function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
 function getInitialExposures(outputCount, playerPool) {
   return playerPool.filter(player => player.liked)
     .reduce((acc, curr) => Object.assign(acc,
-    { [curr.id]: { count: 0, max: Math.floor(curr.liked * outputCount) + 1 } }), {});
+    { [curr.id]: { count: 0, max: Math.ceil(curr.liked * outputCount) } }), {});
 }
 
 function isValidLineup(lineup, salaryFloor, salaryCap, exposures) {
