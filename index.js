@@ -3,7 +3,7 @@ const _ = require('underscore');
 const pool = require('./samplePool.json'); // sample NBA fanduel pool from 12/12/16
 
 // default to one lineup if no argument provided
-const outputCount = process.argv[2] || 1;
+const lineupsToBuild = process.argv[2] || 1;
 
 // returns the salary for a lineup or partial lineup
 function getSalary(lineup) {
@@ -31,7 +31,6 @@ function getPositionCandidates(playerPool, prep, position, remainingSalary) {
       _.includes(player.pos, position) && player.salary < remainingSalary);
 }
 
-// TODO: prevent going over a specified exposure in liked player selection
 function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
   const candidates = getPositionCandidates(playerPool, prep, position, remainingSalary);
   if (candidates.length === 0) {
@@ -50,9 +49,22 @@ function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
   return _.sample(nonLikedCandidates);
 }
 
-function isValidLineup(lineup, salaryFloor, salaryCap) {
+function getInitialExposures(outputCount, playerPool) {
+  return playerPool.filter(player => player.liked)
+    .reduce((acc, curr) => Object.assign(acc,
+    { [curr.id]: { count: 0, max: Math.floor(curr.liked * outputCount) + 1 } }), {});
+}
+
+function isValidLineup(lineup, salaryFloor, salaryCap, exposures) {
   const salary = getSalary(lineup);
-  return salary > salaryFloor && salary < salaryCap;
+  const hasValidExposure = function hasValidExposure(player) {
+    // nonliked players always pass exposure check
+    if (!exposures[player.id]) {
+      return true;
+    }
+    return exposures[player.id].count + 1 <= exposures[player.id].max;
+  };
+  return salary > salaryFloor && salary < salaryCap && lineup.every(hasValidExposure);
 }
 
 // generate a weighted distribution of liked players for a given position
@@ -67,18 +79,20 @@ function generatePosDist(posSubPool) {
   return likedDist;
 }
 
-// generate and return liked distributions for each position
-function generateLineupPrep(playerPool, positions) {
-  return positions.reduce((acc, curr) => {
+// generate and return liked distributions for each position and max exposures
+function generateLineupPrep(outputCount, playerPool, positions) {
+  const likedDistributions = positions.reduce((acc, curr) => {
     const posSubPool = playerPool.filter(player => _.includes(player.pos, curr));
     const posDist = generatePosDist(posSubPool);
     return Object.assign(acc, { [curr]: posDist });
   }, {});
+  const initialExposures = getInitialExposures(outputCount, playerPool);
+  return Object.assign(likedDistributions, { initialExposures });
 }
 
 function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
   const partialLineup = [];
-  for (let posId = 0; posId < positions.length; posId++) {
+  for (let posId = 0; posId < positions.length; posId += 1) {
     const remainingSalary = salaryCap - getSalary(partialLineup);
     const selection = getEligiblePlayer(playerPool, prep, positions[posId], remainingSalary);
     if (!selection) {
@@ -89,19 +103,26 @@ function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
   return partialLineup;
 }
 
-function generateLineups(playerPool, prep, positions, salaryFloor, salaryCap) {
+function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, salaryCap) {
   const lineups = [];
   const lineupKeys = {};
   const maxAttempts = 10e6;
-
   let attempt = 0;
+  // store current and max exposures for liked players as we build lineups
+  let exposures = prep.initialExposures;
+  // update the exposure count while keeping the max
+  const updateExposure = (acc, curr) => Object.assign(acc, { [curr.id]:
+    { count: exposures[curr.id].count + 1, max: exposures[curr.id].max } });
   while (lineups.length < outputCount && attempt < maxAttempts) {
     const candidate = generateLineup(playerPool, prep, positions, salaryFloor, salaryCap);
     if (candidate) {
       const lineupKey = getLineupKey(candidate);
       // only add distinct, valid lineups
-      if (!lineupKeys[lineupKey] && isValidLineup(candidate, salaryFloor, salaryCap)) {
+      if (!lineupKeys[lineupKey] && isValidLineup(candidate, salaryFloor, salaryCap, exposures)) {
         lineupKeys[lineupKey] = candidate;
+        const updatedExposures = candidate.filter(player => player.liked)
+          .reduce(updateExposure, {});
+        exposures = Object.assign(exposures, updatedExposures);
         lineups.push(candidate);
       }
       attempt += 1;
@@ -111,17 +132,21 @@ function generateLineups(playerPool, prep, positions, salaryFloor, salaryCap) {
 }
 
 function printLineups(lineups) {
+/* eslint-disable no-console */
   lineups.sort((lineA, lineB) => getSalary(lineB) - getSalary(lineA))
     .forEach(lineup => console.log(getLineupSummary(lineup)));
+/* eslint-enable no-console */
 }
 
 function printMetadata(salaryFloor, salaryCap, numLineups, hrtime) {
+/* eslint-disable no-console */
   console.log(`salaryFloor = ${getFormattedCurrency(salaryFloor)}`);
   console.log(`salaryCap = ${getFormattedCurrency(salaryCap)}`);
   console.log(`Generated ${numLineups} lineups in ${hrtime[0]}s ${hrtime[1]}ns`);
+/* eslint-enable no-console */
 }
 
-(function run() {
+(function run(outputCount) {
   // fanduel nba settings downscaled to 5 positions
   const salaryCap = 60000 * (5 / 9);
   const salaryFloor = 0.75 * salaryCap;
@@ -129,12 +154,13 @@ function printMetadata(salaryFloor, salaryCap, numLineups, hrtime) {
   // TODO: allow for duplicate positions in a lineup
   const positions = ['PG', 'SG', 'SF', 'PF', 'C'];
 
-  const prep = generateLineupPrep(pool, positions);
+  // store liked exposure distribution as well as max exposures
+  const prep = generateLineupPrep(outputCount, pool, positions);
 
   const hrStart = process.hrtime();
-  const lineups = generateLineups(pool, prep, positions, salaryFloor, salaryCap);
+  const lineups = generateLineups(outputCount, pool, prep, positions, salaryFloor, salaryCap);
   const hrEnd = process.hrtime(hrStart);
 
   printLineups(lineups);
   printMetadata(salaryFloor, salaryCap, lineups.length, hrEnd);
-}());
+}(lineupsToBuild));
