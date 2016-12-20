@@ -1,3 +1,4 @@
+'use-strict'
 // Tournament algorithm to generate lineups from only exposures and salaries
 const _ = require('underscore');
 const pool = require('./samplePool.json'); // sample NBA fanduel pool from 12/12/16
@@ -31,8 +32,9 @@ function getPositionCandidates(playerPool, prep, position, remainingSalary) {
       _.includes(player.pos, position) && player.salary < remainingSalary);
 }
 
-function getEligiblePlayer(playerPool, prep, position, remainingSalary) {
-  const candidates = getPositionCandidates(playerPool, prep, position, remainingSalary);
+function getEligiblePlayer(playerPool, prep, position, remainingSalary, partialIds) {
+  const candidates = getPositionCandidates(playerPool, prep, position, remainingSalary)
+    .filter(player => !partialIds[player]);
   if (candidates.length === 0) {
     return null;
   }
@@ -55,16 +57,9 @@ function getInitialExposures(outputCount, playerPool) {
     { [curr.id]: { count: 0, max: Math.ceil(curr.liked * outputCount) } }), {});
 }
 
-function isValidLineup(lineup, salaryFloor, salaryCap, exposures) {
+function isValidLineup(lineup, salaryFloor, salaryCap) {
   const salary = getSalary(lineup);
-  const hasValidExposure = function hasValidExposure(player) {
-    // nonliked players always pass exposure check
-    if (!exposures[player.id]) {
-      return true;
-    }
-    return exposures[player.id].count + 1 <= exposures[player.id].max;
-  };
-  return salary > salaryFloor && salary < salaryCap && lineup.every(hasValidExposure);
+  return salary > salaryFloor && salary < salaryCap;
 }
 
 // generate a weighted distribution of liked players for a given position
@@ -92,13 +87,16 @@ function generateLineupPrep(outputCount, playerPool, positions) {
 
 function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
   const partialLineup = [];
+  // store ids of players already used in the current partial lineup
+  const partialIds = {};
   for (let posId = 0; posId < positions.length; posId += 1) {
     const remainingSalary = salaryCap - getSalary(partialLineup);
-    const selection = getEligiblePlayer(playerPool, prep, positions[posId], remainingSalary);
+    const selection = getEligiblePlayer(playerPool, prep, positions[posId], remainingSalary, partialIds);
     if (!selection) {
       return null;
     }
     partialLineup.push(selection);
+    partialIds[selection.id] = true;
   }
   return partialLineup;
 }
@@ -107,7 +105,7 @@ function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, 
   const lineups = [];
   const lineupKeys = {};
   // the number of consecutive runs allowed before stopping
-  const failThreshold = 1000;
+  const failThreshold = 100;
   let consecutiveAttemptNum = 0;
   // store current and max exposures for liked players as we build lineups
   let exposures = prep.exposures;
@@ -118,7 +116,7 @@ function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, 
     const candidate = generateLineup(playerPool, prep, positions, salaryFloor, salaryCap);
     if (candidate) {
       const lineupKey = getLineupKey(candidate);
-      const isValid = isValidLineup(candidate, salaryFloor, salaryCap, exposures);
+      const isValid = isValidLineup(candidate, salaryFloor, salaryCap);
       // only add distinct, valid lineups
       if (!lineupKeys[lineupKey] && isValid) {
         lineupKeys[lineupKey] = candidate;
@@ -129,13 +127,6 @@ function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, 
         consecutiveAttemptNum = 0;
       }
       consecutiveAttemptNum += 1;
-      // TODO: Change duplication detection so that lineup order doesn't matter
-      // in order to enable shuffling of positions to try for more lineups
-        /*
-      if (consecutiveAttemptNum > 500) {
-        posPermutation = _.shuffle(positions);
-      }
-      */
     }
   }
   return lineups;
@@ -163,7 +154,7 @@ function printMetadata(salaryFloor, salaryCap, numLineups, prep, hrtime) {
 (function run(outputCount) {
   // fanduel nba settings
   const salaryCap = 60000;
-  const salaryFloor = 0.95 * salaryCap;
+  const salaryFloor = 58800;
   const positions = ['PG', 'SG', 'SF', 'PF', 'C', 'PG', 'SG', 'SF', 'PF'];
 
   // store liked exposure distribution as well as max exposures
