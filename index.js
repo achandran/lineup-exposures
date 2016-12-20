@@ -106,14 +106,15 @@ function generateLineup(playerPool, prep, positions, salaryFloor, salaryCap) {
 function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, salaryCap) {
   const lineups = [];
   const lineupKeys = {};
-  const maxConsecutiveAttempts = 500;
+  // the number of consecutive runs allowed before stopping
+  const failThreshold = 1000;
   let consecutiveAttemptNum = 0;
   // store current and max exposures for liked players as we build lineups
   let exposures = prep.exposures;
   // update the exposure count while keeping the max
   const updateExposure = (acc, curr) => Object.assign(acc, { [curr.id]:
     { count: exposures[curr.id].count + 1, max: exposures[curr.id].max } });
-  while (lineups.length < outputCount && consecutiveAttemptNum < maxConsecutiveAttempts) {
+  while (lineups.length < outputCount && consecutiveAttemptNum < failThreshold) {
     const candidate = generateLineup(playerPool, prep, positions, salaryFloor, salaryCap);
     if (candidate) {
       const lineupKey = getLineupKey(candidate);
@@ -128,6 +129,13 @@ function generateLineups(outputCount, playerPool, prep, positions, salaryFloor, 
         consecutiveAttemptNum = 0;
       }
       consecutiveAttemptNum += 1;
+      // TODO: Change duplication detection so that lineup order doesn't matter
+      // in order to enable shuffling of positions to try for more lineups
+        /*
+      if (consecutiveAttemptNum > 500) {
+        posPermutation = _.shuffle(positions);
+      }
+      */
     }
   }
   return lineups;
@@ -144,9 +152,11 @@ function printMetadata(salaryFloor, salaryCap, numLineups, prep, hrtime) {
 /* eslint-disable no-console */
   console.log(`salary from ${getFormattedCurrency(salaryFloor)} to ${getFormattedCurrency(salaryCap)}`);
   console.log(`Generated ${numLineups} lineups in ${hrtime[0]}s ${hrtime[1]}ns`);
-  console.log('id\t\tcount\t\ttarget');
-  Object.keys(prep.exposures).forEach(id =>
-      console.log(`${id}\t\t${prep.exposures[id].count}\t\t${prep.exposures[id].max}`));
+  console.log('id\t\tCount\t\tTarget\t\tSalary\n--\t\t-----\t\t------\t\t------');
+  Object.keys(prep.exposures).forEach(id => {
+    const player = pool.filter(player => player.liked && player.id === Number(id))[0];
+    console.log(`${id}\t\t${prep.exposures[id].count}\t\t${prep.exposures[id].max}\t\t${getFormattedCurrency(player.salary)}`);
+  });
 /* eslint-enable no-console */
 }
 
